@@ -1,0 +1,14 @@
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/bin/Debug/net8.0/ScreenSound
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/bin/Debug/net8.0/ScreenSound.deps.json
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/bin/Debug/net8.0/ScreenSound.runtimeconfig.json
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/bin/Debug/net8.0/ScreenSound.dll
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/bin/Debug/net8.0/ScreenSound.pdb
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.GeneratedMSBuildEditorConfig.editorconfig
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.AssemblyInfoInputs.cache
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.AssemblyInfo.cs
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.csproj.CoreCompileInputs.cache
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.dll
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/refint/ScreenSound.dll
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.pdb
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.genruntimeconfig.cache
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ref/ScreenSound.dll
