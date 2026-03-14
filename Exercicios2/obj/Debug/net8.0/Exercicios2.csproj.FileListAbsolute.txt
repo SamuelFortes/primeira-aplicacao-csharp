@@ -1,0 +1,15 @@
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/bin/Debug/net8.0/Exercicios2
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/bin/Debug/net8.0/Exercicios2.deps.json
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/bin/Debug/net8.0/Exercicios2.runtimeconfig.json
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/bin/Debug/net8.0/Exercicios2.dll
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/bin/Debug/net8.0/Exercicios2.pdb
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.GeneratedMSBuildEditorConfig.editorconfig
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.AssemblyInfoInputs.cache
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.AssemblyInfo.cs
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.csproj.CoreCompileInputs.cache
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.sourcelink.json
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.dll
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/refint/Exercicios2.dll
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.pdb
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/Exercicios2.genruntimeconfig.cache
+/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/obj/Debug/net8.0/ref/Exercicios2.dll

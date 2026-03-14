@@ -6,7 +6,8 @@ using System;
 using System.Text;
 
 Console.OutputEncoding = Encoding.UTF8;
-List<string> listaDeBandas = [];
+// List<string> listaDeBandas = [];
+Dictionary<string, List<int>> dicionarioDeBandas = new Dictionary<string, List<int>>();
 
 Console.WriteLine("SCREEN SOUND");
 Console.WriteLine("\nBoas Vindas ao Screen Sound!");
@@ -36,6 +37,10 @@ void ExibirMenuPrincipal()
                 MostrarTodasAsBandas();
                 break;
 
+            case 3:
+                AvaliarBanda();
+                break;
+
             case -1:
                 break;
 
@@ -56,7 +61,8 @@ void RegistrarNovaBanda()
     ExibirTituloDaOpcao("Registro de ums nova banda");
     Console.Write("Digite o nome da nova banda que deseja registrar: ");
     string nomeDaBanda = Console.ReadLine()!;
-    listaDeBandas.Add(nomeDaBanda);
+    //listaDeBandas.Add(nomeDaBanda);
+    dicionarioDeBandas.Add(nomeDaBanda, []);
     Thread.Sleep(1000);
 
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
@@ -79,9 +85,9 @@ void MostrarTodasAsBandas()
 
     */
 
-    foreach(string banda in listaDeBandas)
+    foreach(KeyValuePair<string,List<int>> banda in dicionarioDeBandas)
     {
-        Console.WriteLine($"- {banda}");
+        Console.WriteLine($"- {banda.Key}");
     }
 
     Thread.Sleep(1000);
@@ -99,4 +105,30 @@ void ExibirTituloDaOpcao(string titulo)
     Console.WriteLine(titulo);
     Console.WriteLine(quantidadeDeAsteriscos);
     
+}
+
+void AvaliarBanda()
+{
+    Console.Clear();
+
+    ExibirTituloDaOpcao("Avaliação de uma banda");
+    Console.Write("Digite o nome da banda que deseja avaliar: ");
+    string bandaAvaliada = Console.ReadLine()!;
+
+    if(dicionarioDeBandas.ContainsKey(bandaAvaliada))
+    {
+        Console.Write($"Digite a nota que deseja dar a banda {bandaAvaliada}: ");
+        int notaDaBanda = int.Parse(Console.ReadLine()!);
+        dicionarioDeBandas[bandaAvaliada].Add(notaDaBanda);
+
+        Thread.Sleep(1000);
+
+        Console.WriteLine("Nota registrada com sucesso!");
+
+    } else
+    {
+        Console.WriteLine($"A banda {bandaAvaliada} não está cadastrada!");
+    }
+
+    Thread.Sleep(1000);    
 }

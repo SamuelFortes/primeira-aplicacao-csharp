@@ -12,3 +12,4 @@
 /home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.pdb
 /home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.genruntimeconfig.cache
 /home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ref/ScreenSound.dll
+/home/samuel/Documentos/curso-de-csharp-alura/ScreenSound/obj/Debug/net8.0/ScreenSound.sourcelink.json
