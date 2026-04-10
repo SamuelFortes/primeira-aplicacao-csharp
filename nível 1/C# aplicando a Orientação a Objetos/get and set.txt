@@ -1,0 +1,25 @@
+Ex:
+MostrarDisponivel - get()
+EscreveDisponivel - set()
+
+- o atributo que tem operações de leitura e escrita deve ser definido dessa maneira:
+public bool disponivel {get; set;}
+
+- quando um atributo trabalha com operações get e set, ela se torna uma propriedade (property) e deve ser nomeado dessa maneira:
+public bool Disponivel {get; set;}
+
+----------------------------------------
+
+- lambda em c#:
+
+isso:
+public int DescricaoResumida
+    {
+        get
+        {
+            return $"A música {Nome} pertence à banda {Artista}";
+        }
+    }
+
+pode virar isso:
+public int DescricaoResumida => $"A música {Nome} pertence à banda {Artista}";
