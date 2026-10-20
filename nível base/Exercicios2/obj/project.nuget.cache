@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Mtzq0fl6wlMZq8y0/0Knrdh58O/9UxukatQpnZM27yeQn/Qs2W53XkuZvkbVUXYNrIdxQqyMgVCHCXmNSR9i0A==",
+  "dgSpecHash": "YtQ65xPyxEk=",
   "success": true,
-  "projectFilePath": "/home/samuel/Documentos/curso-de-csharp-alura/Exercicios2/Exercicios2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\077114263\\Documents\\primeira-aplicacao-csharp\\nível base\\Exercicios2\\Exercicios2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\077114263\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.29\\microsoft.netcore.app.ref.8.0.29.nupkg.sha512",
+    "C:\\Users\\077114263\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.29\\microsoft.windowsdesktop.app.ref.8.0.29.nupkg.sha512",
+    "C:\\Users\\077114263\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.29\\microsoft.aspnetcore.app.ref.8.0.29.nupkg.sha512",
+    "C:\\Users\\077114263\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.29\\microsoft.netcore.app.host.win-x64.8.0.29.nupkg.sha512"
+  ],
   "logs": []
 }
