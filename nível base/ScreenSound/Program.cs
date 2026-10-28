@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading;
 
 Dictionary<string, List<int>> dicionarioDeBandas = new Dictionary<string, List<int>>();
+Dictionary<string, List<Album>> albunsPorBanda = new Dictionary<string, List<Album>>();
 
     Console.WriteLine("SCREEN SOUND");
     Console.WriteLine("\nBoas Vindas ao Screen Sound!");
@@ -24,6 +25,8 @@ Dictionary<string, List<int>> dicionarioDeBandas = new Dictionary<string, List<i
             2 - Exibir todas as bandas
             3 - Avaliar uma banda
             4 - Exibir a média de uma banda
+            5 - Registrar álbum de uma banda
+            6 - Exibir álbuns de uma banda
             -1 - Sair");
 
             opcao = int.Parse(Console.ReadLine()!);
@@ -44,6 +47,14 @@ Dictionary<string, List<int>> dicionarioDeBandas = new Dictionary<string, List<i
 
                 case 4: 
                     ExibirMediaBanda();
+                    break;
+
+                case 5:
+                    RegistrarAlbum();
+                    break;
+
+                case 6:
+                    ExibirAlbunsDaBanda();
                     break;
 
                 case -1:
@@ -166,4 +177,75 @@ Dictionary<string, List<int>> dicionarioDeBandas = new Dictionary<string, List<i
       {
         Console.WriteLine($"A banda {bandaEscolhidaMedia} ainda não foi registrada dentro do sistema!");
       }
+    }
+
+    void RegistrarAlbum()
+    {
+        Console.Clear();
+
+        ExibirTituloDaOpcao("Registro de um álbum");
+        Console.Write("Digite o nome da banda detentora do álbum: ");
+        string nomeDaBanda = Console.ReadLine()!;
+
+        if (!dicionarioDeBandas.ContainsKey(nomeDaBanda))
+        {
+            Console.WriteLine($"A banda {nomeDaBanda} não está cadastrada!");
+            Thread.Sleep(1000);
+            return;
+        }
+
+        Console.Write("Digite o nome do álbum: ");
+        string nomeDoAlbum = Console.ReadLine()!;
+        Console.Write("Digite o gênero do álbum: ");
+        Genero generoDoAlbum = new(Console.ReadLine()!);
+        Album album = new(nomeDoAlbum, generoDoAlbum);
+
+        string continuar;
+        do
+        {
+            Console.Write("Nome da música: ");
+            string nomeDaMusica = Console.ReadLine()!;
+            Console.Write("Duração da música (em segundos): ");
+            int duracao = int.Parse(Console.ReadLine()!);
+            Genero generoDaMusica = generoDoAlbum;
+
+            album.AdicionarMusica(new Musica(nomeDaMusica, nomeDaBanda, duracao, generoDaMusica));
+
+            Console.Write("Adicionar outra música? (s/n): ");
+            continuar = Console.ReadLine()!;
+        } while (continuar.ToLower() == "s");
+
+        if (!albunsPorBanda.ContainsKey(nomeDaBanda))
+        {
+            albunsPorBanda.Add(nomeDaBanda, new List<Album>());
+        }
+        albunsPorBanda[nomeDaBanda].Add(album);
+
+        Console.WriteLine($"O álbum {album.Nome} foi registrado com sucesso!");
+        Thread.Sleep(1000);
+    }
+
+    void ExibirAlbunsDaBanda()
+    {
+        Console.Clear();
+
+        ExibirTituloDaOpcao("Álbuns de uma banda");
+        Console.Write("Digite o nome da banda: ");
+        string nomeDaBanda = Console.ReadLine()!;
+
+        if (albunsPorBanda.ContainsKey(nomeDaBanda))
+        {
+            foreach (Album album in albunsPorBanda[nomeDaBanda])
+            {
+                Console.WriteLine();
+                album.ExibirMusicasDoAlbum();
+            }
+        }
+        else
+        {
+            Console.WriteLine($"A banda {nomeDaBanda} não possui álbuns registrados!");
+        }
+
+        Console.Write("\nDigite qualquer tecla para retornar ao menu principal:");
+        Console.ReadKey();
     }
